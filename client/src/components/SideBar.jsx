@@ -6,7 +6,7 @@ export default function Sidebar() {
         <h1 className="text-xl font-bold">BoTinda IA</h1>
       </div>
       <nav className="mt-5">
-        <ul className=" space-y-4 px-4">
+        <ul className="space-y-4 px-4">
           <li>
             <a href="/dashboard" className="block py-2 px-4 rounded hover:bg-blue-800">
               🏠 Accueil
