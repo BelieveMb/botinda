@@ -4,9 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import AuthButton from '../components/smallComponents/AuthButton';
 import PhoneInput from '../components/smallComponents/PhoneInput';
 
+
 const Login = () => {
   const [phone, setPhone] = useState('');
-  const navigate = useNavigate();
+  const navigate = useNavigate();   
 
   const handleLoginWithPhone = async () => {
     // Ici tu appellerais Supabase pour envoyer le code SMS
@@ -15,17 +16,17 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-grayLight flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-300 flex flex-col items-center justify-between pb-20 px-6 ">
       {/* Header */}
-      <div className="mb-8">
-        <img src="/logo.png" alt="BoTinda AI" className="h-12 mx-auto" />
-        <p className="text-sm text-gray-500 mt-1">
-          Pas de compte ? <span className="text-primary cursor-pointer" onClick={() => navigate('/signup')}>S'inscrire</span>
+      <div className="my-8 flex items-start justify-between gap-8  w-full ">
+        <img src="../assets/logo-main.png" alt="BoTinda AI" className="border border-indigo-400 h-12 " />
+        <p className="text-12 text-blue-900 mt-1">
+          Pas de compte ? <span className="text-primary cursor-pointer font-bold " onClick={() => navigate('/signup')}>S'inscrire</span>
         </p>
       </div>
 
       {/* Card */}
-      <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-md">
+      <div className="bg-white rounded-xl shadow-md p-6 w-full max-w-md mx-16">
         <h1 className="text-2xl font-poppins font-semibold text-primary mb-4">Connexion</h1>
         <p className="text-gray-600 mb-6">Connectez-vous avec</p>
 
