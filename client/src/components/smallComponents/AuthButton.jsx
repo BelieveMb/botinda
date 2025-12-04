@@ -1,4 +1,6 @@
 // src/components/AuthButton.jsx
+
+// src/components/AuthButton.jsx
 import { FaGoogle, FaApple } from 'react-icons/fa';
 
 const AuthButton = ({ provider, children }) => {

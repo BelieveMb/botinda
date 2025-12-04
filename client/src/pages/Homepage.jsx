@@ -1,39 +1,27 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import react from "react";
 import { MainButton } from "../components/smallComponents/mainButton";
 
 export default function Homepage() {
-  const navigate = useNavigate();
+
+
+
+
+
   return (
-    <section className="w-full layoutMain bg-[#002D6B] text-white py-10 px-4 lg:px-8">
-      {/* Conteneur principal */}
-      <aside className="w-full max-w-xl mx-auto flex flex-col justify-center items-center space-y-8">
-        
-        {/* Logo image */}
-        <div className="my-10 flex flex-col justify-between items-center">
-          <img
-            src="/assets/logoBotinda.png" // ⚠️ Assure-toi que ce chemin est correct
-            alt="Logo BoTinda AI – To Tinda, To Track, To Gérer"
-            className="w-80 lg:w-80 h-auto object-contain rounded-lg shadow-lg mb-20"
-            loading="lazy" // Optimisation performance
-          />
-          
-          <h1 className="text-xl lg:text-3xl font-semibold tracking-tight text-balance sm:text-7xl text-center px-4 leading-tight mb-30">
-            Je gère tes commandes pendant que tu dors.
-          </h1>
+    <section className="w-full layoutMain ">
+      <aside className="w-full lg:w-xl flex flex-col justify-center items-center">
+        <div className="my-40 flex flex-col justify-center items-center">
+          <img src="../../public/logo-main.png" alt="logo Botinda,"  className="h-64 w-64 -mb-20 lg:h-96 lg:w-80 lg:-mb-32" />
+          <h1 class="text-xl lg:text-xl font-semibold tracking-tight text-balance text-white sm:text-7xl text-center lg:w-56">Je géres tes commandes pendant que tu dors.</h1>
+
         </div>
-
-        {/* Bouton CTA */}
-        <MainButton title="👉 Commencez gratuitement" onClick={() => navigate('/Login')} />
-
+        <MainButton title="👉 Commencez gratuitement" />
       </aside>
 
-      {/* Footer */}
-      <div className="my-16 lg:my-6 text-center text-sm text-gray-300">
+      <div className="my-8 lg:my-6 text-center">
         <p>© BoTinda 2025 | Contact | CGU</p>
       </div>
 
     </section>
-
   );
 }
