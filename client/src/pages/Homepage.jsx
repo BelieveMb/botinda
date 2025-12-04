@@ -18,7 +18,7 @@ export default function Homepage() {
         <MainButton title="👉 Commencez gratuitement" />
       </aside>
 
-      <div className="my-8 lg:my-6 text-center">
+      <div className="my-8 lg:my-6 text-center text-gray-50">
         <p>© BoTinda 2025 | Contact | CGU</p>
       </div>
 
